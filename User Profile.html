@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="titlepage"></title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="icon" href="images/OLX-Logo.png" type="icon" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  </head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+    <div class="container">
+      <img style="width: 100px;height:70px;" src="images/Icon.png" />
+
+      <a class="navbar-brand" href="index.html">Pakistan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        
+          <li class="nav-item" >
+            <a class="nav-link"><input class="form-control border-secondary py-2" type="search" name="search" id="search" placeholder="Search Ads Here" onkeyup="searchFunction()"/></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="User Profile.html" id="userProfile">User Profile</a>
+          </li>
+        
+          <li class="nav-item">
+              <a class="nav-link" id="postad" href="submitad.html">Post An Ad</a>
+          </li>                
+          <li class="nav-item" class="inActiveUser" id="inActiveUser">
+            <a class="nav-link" href="signin.html">Sign In/Register</a>
+          </li>
+          <li class="activeUser nav-item" id="activeUser">
+            <a class="nav-link" href="index.html" onclick="signOut()">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+  <h1 class="suh text-center text-dark" id="suh"></h1>   
+  <div class="container">
+    <div class="form-group">
+      <label for="category"><b>Select Category</b></label>
+      <select onchange="selectCategory()" name="category" id="homePageCategorySelection" class="form-control" id="category">
+          <option>All Categories</option>
+          <option>Vehicles</option>
+          <option>Electronics And Home Appliances</option>
+          <option>Furnitue,Home And Decoration</option>
+          <option>Fashion And Beauty</option>
+          <option>Books Sports And Hobbies</option>
+      </select>
+    </div>
+  </div>   
+
+ 
+  <div class="container" id="container">
+    <div class="row" id="row">
+      
+    </div>
+  </div>  
+     
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer-top__box">
+                <h6>POPULARCATEGORIES      
+                    
+                </h6>
+                <a href="#"><h6>Cars</h6></a>
+                <a href="#"><h6>Flats for rent</h6></a>
+                <a href="#"><h6>Jobs</h6></a>
+                <a href="#"><h6>MobilePhone</h6></a>
+                <a href="#"><h6>Site Map</h6></a>
+            </div>
+            <div class="footer-top__box">
+                <h6>TRENDING SEARCHES</h6>
+                <a href="#"><h6>Bike</h6></a>
+                <a href="#"><h6>Watch</h6></a>
+                <a href="#"><h6>Book</h6></a>
+                <a href="#"><h6>Olx Group</h6></a>
+                
+            </div>
+            <div class="footer-top__box">
+                <h6>ABOUT US</h6>
+                <a href="#"><h6>Olx Group</h6></a>
+                <a href="#"><h6>Olx Blog</h6></a>
+                <a href="#"><h6>Contact</h6></a>
+                <a href="#"><h6>Business</h6></a>
+                
+            </div>
+            <div class="footer-top__box">
+                <h6>Olx</h6>
+                <a href="#"><h6>Help</h6></a>
+                <a href="#"><h6>Sittemap</h6></a>
+                <a href="#"><h6>legal privay</h6></a>
+            </div>
+            <div class="footer-top__box">
+                <h6>Follow as</h6>
+                <a   href="https://www.facebook.com/raoabdulraheem000?comment_id=Y29tbWVudDoyNTk1NTcyNTEwNjkwNzE1XzI1OTU1OTcxNTczNTQ5MTc%3D" target="_blank" href="https://twitter.com/raoabdulraheem000">
+                    <i class="fab fa-facebook "> </i>
+                    <a href="https://twitter.com/OfficialSwit" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <a href="https://www.instagram.com/saylaniwelfare/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </a>
+                </a>
+            
+            </div>
+      
+        </div>
+    </div>
+    
+</footer>
+<center>
+    <section class="footer2">
+         <p class="pl-4 text-white"> Copyright © 2020 RAO ABDUL RAHEEM</p>
+         
+     </section><!-- closefooter2 -->
+ </center>
+
+<!-- main -->
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+
+<script>
+
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyB4nxwPWzL7cgML5JD7V0SdfU5D_NeoZ8U",
+    authDomain: "rao-olx.firebaseapp.com",
+    databaseURL: "https://rao-olx.firebaseio.com",
+    projectId: "rao-olx",
+    storageBucket: "rao-olx.appspot.com",
+    messagingSenderId: "153844127352",
+    appId: "1:153844127352:web:a3555fba689b405c2eff8d",
+    measurementId: "G-QL1PWJS8WM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+    <script src="signin.js"></script>
+    <script src="submitad.js"></script>
+    <script src="User Profile.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+.same{
+    width: 50%;
+    margin: 0px auto;
+    
+}
+.goToSignIn{
+    width: 50%;
+    margin: 0px auto;
+}
+.alreadyAccount{
+    display: none;
+    
+}
+.wrongInfo{
+    display: none;
+    
+}
+.suh{
+    margin: 15% auto 2% auto;
+    
+}
+.but{
+    margin: 1% auto 1% auto;
+}
+
+ .grid{
+     margin: 2% 0% 0% 0%;
+ }
+.cardstyling{
+    margin: 0% 0% 2% 0%;
+} 
+.validate{
+    max-height: 300px;
+    max-width: 300px;
+    overflow: scroll;
+}
+.activeUser{
+    display: none;
+}
+#postad{
+    display: none;
+}
+#greetUser{
+    display: none;
+}
+#search{
+     
+    height: 70%;
+}
+#searchBtn{
+    display: none;
+}
+.userProfile{
+    display: none;
+}
+.userAds{
+    display: none;
+}
+.category{
+    color: gray;
+}
+.favourite{
+    display: none;
+}
+.text-messages{
+    color: gray;
+}
+
+
+
+/* for me aditon */
+.footer {
+    padding: 6rem 1rem;
+    line-height: 3rem;
+    border-top: 1px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+  }
+  
+  .footer-top__box span svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  
+  .footer-top__box span {
+    margin-right: 1rem;
+  }
+  
+  .footer__top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: var(--dark-color);
+  }
+  
+  .footer-top__box a:link,
+  .footer-top__box a:visited {
+    display: block;
+    color: var(--dark-color);
+    font-size: 1.4rem;
+  }
+  
+  
+  .footer-top__box div {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+  }
+  
+  .footer-top__box h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  @media only screen and (max-width: 998px) {
+    .footer__top {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer__top {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+  }
+  .footer2{
+    background-color: #FF80AB  ;
+  padding: 10px 0;
+  } 
+
+
+  .logo {
+    width: 50px;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  .location {}
+  
+  .location input {
+    background-color: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
+  }
+  
+  .location .ico {
+    padding: 10px;
+    height: 100% !important;
+    background-color: #000 !important;
+    color: #fff;
+    border: none;
+    outline: inherit;
+  }
+  
+  
+  .search {}
+  
+  .search input {
+    width: 100px;
+    background-color: #fff;
+    border: 2px #002f34 solid;
+    border-radius: 5px;
+  }
+  
+  .search .ico {
+    padding: 10px;
+    height: 100% !important;
+    background-color: #000 !important;
+    color: #fff;
+    border: none;
+    outline: inherit;
+  }
+  
+  .sell {
+    padding: 8px 20px;
+    border: 3px #ffa500 solid;
+    color: #002f34;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px #a9a9a9;
+  }
+  
+  .login {
+    padding-right:10px;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .flex-1{
+    flex: 1;
+  }
+  .flex-2{
+    flex: 2;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  

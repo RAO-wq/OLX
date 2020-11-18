@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RAO ABDUL RAHEEM OLX</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="#">
+
+        <img style="width: 50px;height:50px;" src="images/Icon.png" />
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-2 pr-3">
+
+            <li class="input-group input-group-lg location mr-4 flex-1">
+                <input type="text" class="form-control" placeholder="Pakistan" />
+                <div class="input-group-btn">
+                    <button class="fas fa-search ico"></button>
+                </div>
+            </li>
+
+            <li class="input-group input-group-lg search flex-2">
+
+                <input type="text" class="form-control" placeholder="Find Mobile, Car ,laptop" onkeyup="searchFunction()"/>
+                <div class="input-group-btn">
+                    <button  class="fas fa-search ico" ></button>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="userProfile" href="User Profile.html" id="userProfile"></a>
+          </li>
+        
+          <li class="nav-item">
+              <a class="nav-link" id="postad" href="submitad.html">Post An Ad</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a href="signup.html">
+            <h6 class="mr-sm-2 login" >Login</h6></a>
+            <button class="my-2 my-sm-0 fas fa-plus sell">&nbsp; <a href="signin.html" onClick="createNewAdd()"> SELL</button></a>
+         
+            
+        </form>
+    </div>
+</nav>
+
+
+ 
+
+
+  
+  <section class="logo section sticky-top bg">
+     <div class="container ">
+              
+                  <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav pl-5 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <b>All Categories</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#"><br>Vehicle</a> </a>
+                           <a class="dropdown-item" href="#">Fasion suit </a>
+                            <a class="dropdown-item" href="#">Furniture & Home Decor </a>
+                             <a class="dropdown-item" href="#">Property for rent </a>
+                              <a class="dropdown-item" href="#">Books, Sports & Hobbies </a>
+                               <a class="dropdown-item" href="#">services </a> 
+                               <a class="dropdown-item" href="#">Business, Industrial & Agriculture </a>
+                                <a class="dropdown-item" href="#">Jobs </a>
+                                 <a class="dropdown-item" href="#">Kids </a>
+                                   <a class="dropdown-item" href="#">Electronics & Home Appliances </a>
+                                     <a class="dropdown-item" href="#">Property for sale </a>
+                                       <a class="dropdown-item" href="#">Aeroplane </a>
+                        
+                        </div>
+                      </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">MobilePhone</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">Car</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">MotorCycle</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">House</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">TvVideoAudio</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">Table</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="">Land&Plots</a>
+                  </li>
+
+                 </ul>
+               
+              </div>
+            </nav>
+        
+            </div>
+    
+          </section>  <div class="container">
+            <img  src="images/home.PNG" alt="Nature" class="responsive">
+
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="messages-text" class="col-form-label">Messages:</label>
+            <div class="modal-body" id="messages-text"><p id="modal-list"></p></div>
+          </div>
+          <div class="form-group">
+            <label for="recipient-messege" class="col-form-label">Type Your Message Here</label>
+            <input type="text" class="form-control" id="recipient-messege">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Ads -->
+  <div class="container" id="container">
+    <div class="row" id="row">
+      
+    </div>
+  </div>  
+     
+
+
+
+  <footer id="footer" class="section footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer-top__box">
+                        <h6>POPULARCATEGORIES      
+                            
+                        </h6>
+                        <a href="#"><h6>Cars</h6></a>
+                        <a href="#"><h6>Flats for rent</h6></a>
+                        <a href="#"><h6>Jobs</h6></a>
+                        <a href="#"><h6>MobilePhone</h6></a>
+                        <a href="#"><h6>Site Map</h6></a>
+                    </div>
+                    <div class="footer-top__box">
+                        <h6>TRENDING SEARCHES</h6>
+                        <a href="#"><h6>Bike</h6></a>
+                        <a href="#"><h6>Watch</h6></a>
+                        <a href="#"><h6>Book</h6></a>
+                        <a href="#"><h6>Olx Group</h6></a>
+                        
+                    </div>
+                    <div class="footer-top__box">
+                        <h6>ABOUT US</h6>
+                        <a href="#"><h6>Olx Group</h6></a>
+                        <a href="#"><h6>Olx Blog</h6></a>
+                        <a href="#"><h6>Contact</h6></a>
+                        <a href="#"><h6>Business</h6></a>
+                        
+                    </div>
+                    <div class="footer-top__box">
+                        <h6>Olx</h6>
+                        <a href="#"><h6>Help</h6></a>
+                        <a href="#"><h6>Sittemap</h6></a>
+                        <a href="#"><h6>legal privay</h6></a>
+                    </div>
+                    <div class="footer-top__box">
+                        <h6>Follow as</h6>
+                        <a   href="https://www.facebook.com/raoabdulraheem000?comment_id=Y29tbWVudDoyNTk1NTcyNTEwNjkwNzE1XzI1OTU1OTcxNTczNTQ5MTc%3D" target="_blank" href="https://twitter.com/raoabdulraheem000">
+                            <i class="fab fa-facebook "> </i>
+                            <a href="https://twitter.com/raoabdulraheem000" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <a href="https://www.instagram.com/saylaniwelfare/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </a>
+                        </a>
+                    
+                    </div>
+              
+                </div>
+            </div>
+            
+        </footer>
+        <center>
+            <section class="footer2">
+                 <p class="pl-4 text-white"> Copyright © 2020 RAO ABDUL RAHEEM</p>
+                 
+             </section><!-- closefooter2 -->
+         </center>
+
+
+
+
+         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+
+<script>
+
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyB4nxwPWzL7cgML5JD7V0SdfU5D_NeoZ8U",
+    authDomain: "rao-olx.firebaseapp.com",
+    databaseURL: "https://rao-olx.firebaseio.com",
+    projectId: "rao-olx",
+    storageBucket: "rao-olx.appspot.com",
+    messagingSenderId: "153844127352",
+    appId: "1:153844127352:web:a3555fba689b405c2eff8d",
+    measurementId: "G-QL1PWJS8WM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+    <script src="signin.js"></script>
+    <script src="submitad.js"></script>
+    <!-- <script src="User Profile.js"></script> -->
+    <script src="script.js"></script>
+
+</body>
+</html>
